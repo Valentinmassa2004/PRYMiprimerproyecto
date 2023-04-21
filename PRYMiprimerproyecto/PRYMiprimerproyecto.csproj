@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gear_development_coding_programming_icon_220525 %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,10 +58,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmalacena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmalacena.Designer.cs">
+      <DependentUpon>frmalacena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstockproducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstockproducto.Designer.cs">
+      <DependentUpon>frmstockproducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmalacena.resx">
+      <DependentUpon>frmalacena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstockproducto.resx">
+      <DependentUpon>frmstockproducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gear_development_coding_programming_icon_220525 %281%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

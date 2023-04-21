@@ -36,5 +36,15 @@ namespace PRYMiprimerproyecto
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresos_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
