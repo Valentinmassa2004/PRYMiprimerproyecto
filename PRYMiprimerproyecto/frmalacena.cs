@@ -24,6 +24,8 @@ namespace PRYMiprimerproyecto
 
         private void cmdbuscar_Click(object sender, EventArgs e)
         {
+            frmstockproducto frmstockproducto = new frmstockproducto();
+            frmstockproducto.ShowDialog();
 
         }
     }

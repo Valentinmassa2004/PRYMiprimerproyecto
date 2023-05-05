@@ -1,7 +1,10 @@
 ﻿namespace PRYMiprimerproyecto
-{
+{ 
+
+    //declaraciondevariables
+
     partial class frmalacena
-    {
+    {   
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -29,9 +32,9 @@
         private void InitializeComponent()
         {
             this.fmalacena = new System.Windows.Forms.GroupBox();
+            this.cmdbuscar = new System.Windows.Forms.Button();
             this.lstcategorias = new System.Windows.Forms.ComboBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.cmdbuscar = new System.Windows.Forms.Button();
             this.fmalacena.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +48,17 @@
             this.fmalacena.TabIndex = 0;
             this.fmalacena.TabStop = false;
             this.fmalacena.Text = "Alacena";
+            // 
+            // cmdbuscar
+            // 
+            this.cmdbuscar.Font = new System.Drawing.Font("Wide Latin", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdbuscar.Location = new System.Drawing.Point(159, 106);
+            this.cmdbuscar.Name = "cmdbuscar";
+            this.cmdbuscar.Size = new System.Drawing.Size(96, 29);
+            this.cmdbuscar.TabIndex = 1;
+            this.cmdbuscar.Text = "Buscar";
+            this.cmdbuscar.UseVisualStyleBackColor = true;
+            this.cmdbuscar.Click += new System.EventHandler(this.cmdbuscar_Click);
             // 
             // lstcategorias
             // 
@@ -67,17 +81,6 @@
             this.lstcategorias.TabIndex = 0;
             this.lstcategorias.Text = "categorias";
             this.lstcategorias.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // cmdbuscar
-            // 
-            this.cmdbuscar.Font = new System.Drawing.Font("Wide Latin", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdbuscar.Location = new System.Drawing.Point(159, 106);
-            this.cmdbuscar.Name = "cmdbuscar";
-            this.cmdbuscar.Size = new System.Drawing.Size(96, 29);
-            this.cmdbuscar.TabIndex = 1;
-            this.cmdbuscar.Text = "Buscar";
-            this.cmdbuscar.UseVisualStyleBackColor = true;
-            this.cmdbuscar.Click += new System.EventHandler(this.cmdbuscar_Click);
             // 
             // frmalacena
             // 

@@ -30,29 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtmensualidad = new System.Windows.Forms.TextBox();
+            this.txtgastosfijos = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.ingresos = new System.Windows.Forms.GroupBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblimpuestos = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.txtgastosfijos.SuspendLayout();
             this.ingresos.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtmensualidad);
             this.groupBox1.Location = new System.Drawing.Point(22, 33);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(280, 19);
@@ -60,30 +63,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mensualidad";
             // 
-            // textBox1
+            // txtmensualidad
             // 
-            this.textBox1.Location = new System.Drawing.Point(90, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "$63000";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtmensualidad.Location = new System.Drawing.Point(90, 0);
+            this.txtmensualidad.Name = "txtmensualidad";
+            this.txtmensualidad.Size = new System.Drawing.Size(100, 20);
+            this.txtmensualidad.TabIndex = 0;
+            this.txtmensualidad.Text = "$63000";
+            this.txtmensualidad.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // groupBox2
+            // txtgastosfijos
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(22, 70);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(204, 175);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Gastos fijos";
+            this.txtgastosfijos.Controls.Add(this.label5);
+            this.txtgastosfijos.Controls.Add(this.lblimpuestos);
+            this.txtgastosfijos.Controls.Add(this.label1);
+            this.txtgastosfijos.Controls.Add(this.button2);
+            this.txtgastosfijos.Controls.Add(this.textBox4);
+            this.txtgastosfijos.Controls.Add(this.textBox7);
+            this.txtgastosfijos.Controls.Add(this.textBox3);
+            this.txtgastosfijos.Controls.Add(this.label3);
+            this.txtgastosfijos.Controls.Add(this.textBox2);
+            this.txtgastosfijos.Controls.Add(this.lbl);
+            this.txtgastosfijos.Location = new System.Drawing.Point(22, 70);
+            this.txtgastosfijos.Name = "txtgastosfijos";
+            this.txtgastosfijos.Size = new System.Drawing.Size(204, 175);
+            this.txtgastosfijos.TabIndex = 1;
+            this.txtgastosfijos.TabStop = false;
+            this.txtgastosfijos.Text = "Gastos fijos";
             // 
             // button2
             // 
@@ -124,7 +130,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 107);
+            this.label3.Location = new System.Drawing.Point(6, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 16);
             this.label3.TabIndex = 4;
@@ -138,15 +144,15 @@
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "$";
             // 
-            // label1
+            // lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 117);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Alquiler\r\n\r\nImpuestos\r\n\r\nComida\r\n                              \r\n\r\n\r\n ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(6, 29);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(41, 91);
+            this.lbl.TabIndex = 0;
+            this.lbl.Text = "Alquiler\r\n\r\n\r\n\r\n\r\n\r\n ";
+            this.lbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -157,6 +163,7 @@
             this.label2.Size = new System.Drawing.Size(31, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Resto";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -193,7 +200,7 @@
             this.ingresos.Controls.Add(this.label4);
             this.ingresos.Controls.Add(this.button1);
             this.ingresos.Controls.Add(this.label2);
-            this.ingresos.Controls.Add(this.groupBox2);
+            this.ingresos.Controls.Add(this.txtgastosfijos);
             this.ingresos.Controls.Add(this.groupBox1);
             this.ingresos.Location = new System.Drawing.Point(12, 12);
             this.ingresos.Name = "ingresos";
@@ -210,6 +217,32 @@
             this.textBox6.TabIndex = 8;
             this.textBox6.Text = "$";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 7;
+            // 
+            // lblimpuestos
+            // 
+            this.lblimpuestos.AutoSize = true;
+            this.lblimpuestos.Location = new System.Drawing.Point(6, 58);
+            this.lblimpuestos.Name = "lblimpuestos";
+            this.lblimpuestos.Size = new System.Drawing.Size(55, 13);
+            this.lblimpuestos.TabIndex = 8;
+            this.lblimpuestos.Text = "Impuestos";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 84);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Comida";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,8 +254,8 @@
             this.Text = "mensualidad";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.txtgastosfijos.ResumeLayout(false);
+            this.txtgastosfijos.PerformLayout();
             this.ingresos.ResumeLayout(false);
             this.ingresos.PerformLayout();
             this.ResumeLayout(false);
@@ -232,21 +265,24 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtmensualidad;
+        private System.Windows.Forms.GroupBox txtgastosfijos;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.GroupBox ingresos;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblimpuestos;
+        private System.Windows.Forms.Label label5;
     }
 }
 
