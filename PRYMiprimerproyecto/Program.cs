@@ -16,7 +16,7 @@ namespace PRYMiprimerproyecto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmalacena());
+            Application.Run(new principal());
         }
     }
 }
