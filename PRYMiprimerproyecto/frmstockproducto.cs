@@ -16,5 +16,10 @@ namespace PRYMiprimerproyecto
         {
             InitializeComponent();
         }
+
+        private void frmstockproducto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

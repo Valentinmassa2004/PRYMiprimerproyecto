@@ -33,7 +33,7 @@
         {
             this.fmalacena = new System.Windows.Forms.GroupBox();
             this.cmdbuscar = new System.Windows.Forms.Button();
-            this.lstcategorias = new System.Windows.Forms.ComboBox();
+            this.cbocategorias = new System.Windows.Forms.ComboBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.fmalacena.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +41,7 @@
             // fmalacena
             // 
             this.fmalacena.Controls.Add(this.cmdbuscar);
-            this.fmalacena.Controls.Add(this.lstcategorias);
+            this.fmalacena.Controls.Add(this.cbocategorias);
             this.fmalacena.Location = new System.Drawing.Point(0, 0);
             this.fmalacena.Name = "fmalacena";
             this.fmalacena.Size = new System.Drawing.Size(273, 143);
@@ -60,11 +60,11 @@
             this.cmdbuscar.UseVisualStyleBackColor = true;
             this.cmdbuscar.Click += new System.EventHandler(this.cmdbuscar_Click);
             // 
-            // lstcategorias
+            // cbocategorias
             // 
-            this.lstcategorias.Font = new System.Drawing.Font("Magneto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstcategorias.FormattingEnabled = true;
-            this.lstcategorias.Items.AddRange(new object[] {
+            this.cbocategorias.Font = new System.Drawing.Font("Magneto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbocategorias.FormattingEnabled = true;
+            this.cbocategorias.Items.AddRange(new object[] {
             "Productos de limpieza",
             "Productos perecederos",
             "Azucar ",
@@ -75,12 +75,12 @@
             "Vinagre",
             "Sal gruesa y fina",
             "Rollisec"});
-            this.lstcategorias.Location = new System.Drawing.Point(12, 40);
-            this.lstcategorias.Name = "lstcategorias";
-            this.lstcategorias.Size = new System.Drawing.Size(243, 33);
-            this.lstcategorias.TabIndex = 0;
-            this.lstcategorias.Text = "categorias";
-            this.lstcategorias.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbocategorias.Location = new System.Drawing.Point(12, 40);
+            this.cbocategorias.Name = "cbocategorias";
+            this.cbocategorias.Size = new System.Drawing.Size(243, 33);
+            this.cbocategorias.TabIndex = 0;
+            this.cbocategorias.Text = "categorias";
+            this.cbocategorias.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // frmalacena
             // 
@@ -98,7 +98,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox fmalacena;
-        private System.Windows.Forms.ComboBox lstcategorias;
+        private System.Windows.Forms.ComboBox cbocategorias;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button cmdbuscar;
     }
